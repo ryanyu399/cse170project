@@ -30,7 +30,8 @@
     <div class="navbar-inner">
         <a class="brand" href="#"><img src="img/Team-logo.jpg" height=30 width=30>TODO CSE Lab App</a>
         <ul id="nav-list" class="nav">
-            <li ng-repeat="tab in tabs | filter:{role: role}" id={{tab.id}} onclick="activate('{{tab.id}}')"><a href={{tab.href}}>{{tab.name}}</a></li>
+        	<li id="nav-home"><a href="/#/home">Home</a></li>
+        	<li id="nav-home"><a href="/#/home">Labs</a></li>
             <li id="nav-contact-us"><a href="/#/contact_us">Contact Us</a></li>
         </ul>
     </div>
