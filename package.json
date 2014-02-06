@@ -1,21 +1,5 @@
 {
     "name": "node-example",
     "version": "0.0.1",
-    "dependencies": {
-        "passport": "0.1.x",
-        "passport-google-oauth": "0.1.x",
-        "mandrill-api":">=1.0.2",
-        "twilio":">=1.4.0",
-        "needle": "0.5.x",
-        "express": "3.1.x",
-        "node-logentries": "0.0.2",
-        "mongoose":">=3.5.7",
-        "should"  :"latest",
-        "mocha"   :"latest",
-        "async"   :"latest"
-    },
-    "engines": {
-        "node": "0.10.x",
-        "npm": "1.2.x"
-    }
+
 }
