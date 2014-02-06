@@ -1,13 +1,13 @@
 {
-  "name": "CSE 170 app",
+  "name": "IntroHCI",
   "version": "0.0.1",
-  "author": "//TODO",
+  "author": "Intro HCI Staff",
 
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/IntroHCI/lab5"
   },
-  "license": "",
+  "license": "MIT",
 
   "private": true,
   "scripts": {
