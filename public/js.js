@@ -27,7 +27,24 @@ $(document).ready(function() {
 			$('#load').fadeOut('normal');
 		}
 		return false;
-		
 	});
+	$('.submitProblem').on('click', function(e)
+	{
+		var reportOK = false;
+		if ($('#room').val() == 'Select a room')
+		{
+			reportOK = false;
+			$('#noRoom').slideDown();
+		}
+		else
+		{
+			reportOK = true;
+		}
+		if(reportOK == true)
+		{
+			$('#noRoom').slideUp();
+			$('#myModal').modal('hide');			
+		}
 
+	});
 });
