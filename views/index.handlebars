@@ -8,64 +8,34 @@
 	<link href = "css/bootstrap-theme.css" rel = "stylesheet">
 	<link href = "css/hci-friends.css" rel = "stylesheet">
 	<link href = "css/bootstrap-twitter.css" rel = "stylesheet">
-	<script>
-	function myFunction(id)
-	{
-		if(id == "nav-home")
-		{
-			document.getElementById("home").innerHTML = "<img src = 'http://cse.ucsd.edu/sites/cse/files/cse/assets/images/EBU3BB.jpg' style = 'display:block; margin-left: auto; margin-right: auto;'> </img>"
-		}
-		if(id == "nav-labs")
-		{
-			document.getElementById("home").innerHTML="<title> Labs </title> <img src = 'http://www.cbdr.cmu.edu/CraigLab.jpg'style = 'display:block; margin-left: auto; margin-right: auto; height:50%; width:50%;'></img>" +
-			  "<h1> Live Data Coming Soon!! </h1>";
-		}
-		if(id == "nav-contact-us")
-		{
-			document.getElementById("home").innerHTML = "<title> Contact Us </title> <h1> UCSD CSE 170 class </h1>";
-		}
-	}
-</script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->        
+     
 </head>
 
 <body>
-	<div class = "container">
-		<div ng-init="tabs =
-    		[{role: 'Home', id: 'home', href: '#/index', name: 'Home'},
-    		{role: 'labs', id: 'labs', href: '#/labs', name: 'View Labs'},
-    		{role: 'labs', id: 'lab_layout', href: '#/layout', name: 'Lab Layout'}]"
-		</div>
 
-<div class="navbar" ng-controller="navCtrl">
-    <div class="navbar-inner">
-        <a class="brand" href="#" onclick = "myFunction(this.id)">Lab App</a>
-        <ul id="nav-list" class="nav">
-        	<li id="nav-home"><a href = "#" id = "nav-home" onclick = "myFunction(this.id)">Home</a></li>
-        	<li id="nav-labs"><a href = "#" id = "nav-labs" onclick = "myFunction(this.id)" >Map View</a></li>
-        	<li id="nav-contact-us"><a href = "#" id = "nav-contact-us" onclick = "myFunction(this.id)">Reports</a></li>
-            <li id="nav-contact-us"><a href = "#" id = "nav-contact-us" onclick = "myFunction(this.id)">Contact Us</a></li>
+	<nav class="navbar navbar-default" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">CSE 170 App</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li class = "actuve" id="nav-contact-us"><a rel='tab' href='labs.html'>Labs</a></li>
+            <li id="nav-contact-us"><a href="contact_us">Contact Us</a></li>
         </ul>
-    </div>
-</div>
-	<div id = "home">
-
-	<img src = "http://cse.ucsd.edu/sites/cse/files/cse/assets/images/EBU3BB.jpg" style = "
-		display:block; margin-left: auto; margin-right: auto;"> </img>
-	</div>
-	</div>
-	<hr>
-	<p class="text-center">
-    &copy; 2014, @copyright //TODO
-	</p>
+      </div>
+	</nav>
+    
+	<script type="ajax.js" src="js.js"></script>
 	<script src = "js/jquery-1.11.0.js"></script>
 	<script type="text/javascript" src="js.js"></script>
+	
+	<hr>
+	<p class="text-center">
+    &copy; 2013, //TODO -- CSE 170
+	</p>
 
 </body>
 </html>
