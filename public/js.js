@@ -45,6 +45,36 @@ $(document).ready(function() {
 			$('#noRoom').slideUp();
 			$('#myModal').modal('hide');			
 		}
+	});
 
+
+	$(function() 
+  	{
+	    $( "#slider-range-min" ).slider(
+	    {
+		    range: "min",
+		    value: 1,
+		    min: 1,
+		    max: 10,
+		    slide: function( event, ui ) {
+		        $( "#stank" ).val( "" + ui.value );
+	    }
+	    });
+	    $( "#stank" ).val( "" + $( "#slider-range-min" ).slider( "value" ) );
+	});
+
+	$(function() 
+  	{
+	    $( "#slider-range-min2" ).slider(
+	    {
+		    range: "min",
+		    value: 1,
+		    min: 1,
+		    max: 10,
+		    slide: function( event, ui ) {
+		        $( "#crowd" ).val( "" + ui.value );
+	    }
+	    });
+	    $( "#crowd" ).val( "" + $( "#slider-range-min" ).slider( "value" ) );
 	});
 });
