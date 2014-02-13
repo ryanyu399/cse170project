@@ -1,1 +1,110 @@
-<h1> Coming Soon!! </h1>
+	<link href = "../public/css/bootstrap.css" rel="stylesheet">
+	<link href = "../public/css/bootstrap-theme.css" rel = "stylesheet">
+	<link href = "../public/css/hci-friends.css" rel = "stylesheet">
+	<link href = "../public/css/metro-bootstrap.css" rel = "stylesheet">
+	<link href = "../public/css/bootstrap-twitter.css" rel = "stylesheet">
+	<link href = "../public/css/style.css" rel = "stylesheet">
+	
+	<script src = "../public/js/jquery-2.1.0.min.js"></script>
+	<script src = "../public/js/bootstrap.min.js"></script>
+	<script src = "../public/js/jquery-ui-1.10.4.custom.min.js"></script>
+	<link href = "../public/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+	<link href = "../public/css/bootstrap.css" rel="stylesheet">
+	<link href = "../public/css/bootstrap-theme.css" rel = "stylesheet">
+	
+
+    <!-- Report Problem Button -->
+    
+    <br>
+    <br>
+    <br>
+    <h2> Available Seats: 4 </h2>
+    	<div class="table-responsive">
+  		<table class="table">
+		<tbody rowspan="2">
+    		<tr class='clickableRow' href="labs.html">
+                <td><h1>Anonymous at 7:20pm</h1></td>
+                <td>Someone threw stuff in the trash!</td>
+       		</tr>
+       		<tr class='clickableRow' href="labs.html">
+                <td><h1>Peter at 6:00pm</h1></td>
+                <td>Tutors are here!! :D</td>
+			</tr>
+       		<tr class='clickableRow' href="labs.html">
+                <td><h1>O at 9pm</h1></td>
+            	<td>Program deadline got extended! whooooo!</td>
+		</tbody>
+  	</table>
+	</div>
+
+<div class = "container" style = "margin-left:5px;">
+    <button class = "btn btn-danger reportProblem" data-toggle="modal" data-target="#myModal">Report a Problem</button>
+
+    </div>
+    <div class="modal fade container" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+    	style = "margin-left:30%; width:50%; height:50%;">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+		        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        	<h4 class="modal-title" id="myModalLabel">Report a Problem</h4>
+		      	</div>
+		      	<div class="modal-body">
+		      		<div class="alert alert-danger" id="noRoom"style="display:none">No Room Selected</div>
+			        <form class="form-horizontal" role="form">
+					  	<div class="form-group">
+					    	<label class="sr-only" for="exampleInputEmail2">Email address</label>
+					    	<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Name">
+					  	</div>
+					  	<div class="form-group">
+						    <select id = "room" class = "form-control">
+						    	<option>Select a room</option>
+						    	<option>b220</option>
+						    	<option>b230</option>
+						    	<option>b240</option>
+						    	<option>b250</option>
+						    	<option>b260</option>
+						    	<option>b270</option>
+						  	</select>
+					  	</div>
+						<p>
+							<label for="stank">Stank</label>
+							<input type="text" id="stank" style="border:0; color:green; font-weight:bold;">
+						</p>						 
+						<div id="slider-range-min"></div>
+						<p>
+							<label for="crowd">Crowdedness</label>
+							<input type="text" id="crowd" style="border:0; color:red; font-weight:bold;">
+						</p>						 
+						<div id="slider-range-min2"></div>
+					  	<div class="checkbox">
+						    <label>
+						      <input type="checkbox"> Strong food Smell
+						    </label>
+					  	</div>
+					  	<div class="checkbox">
+						    <label>
+						      <input type="checkbox"> Smells like Sweat/B.O.
+						    </label>
+					  	</div>
+					    <div class="input-group">
+						    <span class="input-group-addon">
+						        <input type="checkbox">
+						    </span>
+					      	<input placeholder="other"type="text" class="form-control">
+					    </div><!-- /input-group -->
+					</form>
+		      	</div>
+		      	<div class="modal-footer">
+		        	<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		        	<button type="button" class="btn btn-primary submitProblem" >Submit</button>
+		      	</div>
+		    </div>
+		  </div>
+	</div>
+	<script type="ajax.js" src="js.js"></script>
+<!--<<<<<<< HEAD-->
+	<script src = "js/jquery-1.11.0.js"></script>
+<!-- =======-->
+<!-- >>>>>>> ca8d342164c4063e186f80a8ddebcbc8a1f39e1b-->
+	<script type="text/javascript" src="js.js"></script>
