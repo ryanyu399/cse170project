@@ -39,7 +39,7 @@
 
 	<br>
 	<br>
-	<div>
+	<div>	
 	<div class="col-xs-6 col-md-4">
 		<a href="index" rel = 'tab' style = "text-decoration:none; width:100%;" class="thumbnail tile tile-teal">
 			<h1>Home</h1>
@@ -51,7 +51,15 @@
 			</a>
 	</div>
 	</div>
-	
+<h1 style = "margin-left:10%; color:blue;"> Today is
+<script type="text/javascript">
+var currentTime = new Date();
+var month = currentTime.getMonth() + 1;
+var day = currentTime.getDate();
+var year = currentTime.getFullYear();
+document.write(month + "/" + day + "/" + year);
+</script>
+</h1>
 <div id = "reload">
 	<div class="table-responsive">
   	<table class="table">
