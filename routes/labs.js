@@ -1,9 +1,9 @@
 exports.viewLabs = function(req, res) {
 
   // controller code goes here
-  var name = req.params.name;
+  var name = $(this).attr("id");
 
-  console.log("The project name is: " + name);
+  console.log("Lab Room is " + name);
   res.render('labs', {
     'projectName': name
   });
