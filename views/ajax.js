@@ -1,6 +1,6 @@
 $(function()
 {
-	$("a[rel='tab']").click(function(e)
+	$(".clickableRow").click(function(e)
 	{
 		
 		//get the link location that was clicked
@@ -9,7 +9,7 @@ $(function()
 		//to get the ajax content and display in div with id 'content'
 		$.ajax({url:pageurl+'?rel=tab',success: function(data)
 		{
-			$('#content').html(data);
+			$('#reload').html(data);
 		}});
 		
 		//to change the browser URL to 'pageurl'

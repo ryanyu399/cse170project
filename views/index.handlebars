@@ -4,51 +4,89 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
+<!--<<<<<<< HEAD -->
 	<link href = "../public/css/bootstrap.css" rel="stylesheet">
 	<link href = "../public/css/bootstrap-theme.css" rel = "stylesheet">
 	<link href = "../public/css/hci-friends.css" rel = "stylesheet">
 	<link href = "../public/css/bootstrap-twitter.css" rel = "stylesheet">
-=======
-	<script src = "js/jquery-2.1.0.min.js"></script>
-	<script src = "js/bootstrap.min.js"></script>
-	<script src = "js/jquery-ui-1.10.4.custom.min.js"></script>
-	<link href = "css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
-	<link href = "css/bootstrap.css" rel="stylesheet">
-	<link href = "css/bootstrap-theme.css" rel = "stylesheet">
+	<link href = "../public/css/metro-bootstrap.css" rel = "stylesheet">
+	<link href = "../public/css/style.css" rel = "stylesheet">
+<!--=======-->
+	<script src = "../public/js/jquery-2.1.0.min.js"></script>
+	<script src = "../public/js/bootstrap.min.js"></script>
+	<script src = "../public/js/jquery-ui-1.10.4.custom.min.js"></script>
+	<link href = "../public/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+	<link href = "../public/css/bootstrap.css" rel="stylesheet">
+	<link href = "../public/css/bootstrap-theme.css" rel = "stylesheet">
 	<!--<link href = "css/hci-friends.css" rel = "stylesheet">-->
 	<!--<link href = "css/bootstrap-twitter.css" rel = "stylesheet">-->
->>>>>>> ca8d342164c4063e186f80a8ddebcbc8a1f39e1b
-     
+<!-- >>>>>>> ca8d342164c4063e186f80a8ddebcbc8a1f39e1b -->
+
+		<div class="col-xs-6 col-md-3">
+			<a href="index.handlebars" rel = 'tab' style = "text-decoration:none; width:100%;" class="thumbnail tile tile-teal">
+				<h1>Home</h1>
+			</a>
+	</div>
+	<div class="col-xs-6 col-md-3"">
+			<a href="index.handlebars.html" rel='tab' style = "text-decoration:none; width:100%;" class="thumbnail tile tile-green">
+				<h1>Lab View</h1>
+			</a>
+	</div>
+	<div class="col-xs-6 col-md-3"">
+			<a href="contactus.html" style = "text-decoration:none; width:100%;" class="thumbnail tile tile-yellow" >
+				<h1>Contact Us</h1>
+			</a>
+	</div>
+	
+	<script>
+	jQuery(document).ready(function($) {
+      $(".clickableRow").click(function() {
+            window.document.location = $(this).attr("href");
+      });
+	});
+	</script>
 </head>
 
 <body>
-<div class="row">
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img data-src="http://www.theprintblog.com/wp-content/uploads/2013/03/green.jpg" alt="Home">
-    </a>
-    
-    <a href = "labs.html" class = thumbnail">
-      <img data-src="http://www.theprintblog.com/wp-content/uploads/2013/03/green.jpg" alt="labs">
-	</a>
-  </div>
-  
-</div>
-	<nav class="navbar navbar-default" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">CSE 170 App</a>
-      </div>
+	<div id = "reload">
+	</div>
+	<br>
+	<br>
+	
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-            <li class = "actuve" id="nav-contact-us"><a rel='tab' href='labs.html'>Labs</a></li>
-            <li id="nav-contact-us"><a href="contact_us">Contact Us</a></li>
-        </ul>
-      </div>
-	</nav>
+	<div class="table-responsive">
+  	<table class="table">
+		<tbody rowspan="2">
+    		<tr class='clickableRow' href="labs.html">
+                <td><h1>B220</h1></td>
+                <td>Stank Meter : 50</td>
+       		</tr>
+       		<tr class='clickableRow' href="labs.html">
+                <td><h1>B230</h1></td>
+                <td>Stank Meter : 60</td>
+			</tr>
+       		<tr class='clickableRow' href="labs.html">
+                <td><h1>B240</h1></td>
+            	<td>Stank Meter : 70</td>
+
+			</tr>
+			<tr class='clickableRow' href="labs.html">
+                <td><h1>B250</h1></td>
+                <td>Stank Meter : 70</td>
+			</tr>
+			<tr class='clickableRow' href="labs.html">
+                <td><h1>B260</h1></td>
+                <td>Stank Meter : 70</td>
+			</tr>
+			<tr class='clickableRow' href="labs.html">
+                <td><h1>B270</h1></td>
+                <td>Stank Meter : 70</td>
+			</tr>
+		</tbody>
+  	</table>
+	</div>
+	
+	
     <div class = "container" style = "margin-left:5px;">
     <button class = "btn btn-danger reportProblem" data-toggle="modal" data-target="#myModal">Report a Problem</button>
 
@@ -116,10 +154,10 @@
 
 
 	<script type="ajax.js" src="js.js"></script>
-<<<<<<< HEAD
+<!--<<<<<<< HEAD-->
 	<script src = "../public/js/jquery-1.11.0.js"></script>
-=======
->>>>>>> ca8d342164c4063e186f80a8ddebcbc8a1f39e1b
+<!-- =======-->
+<!-- >>>>>>> ca8d342164c4063e186f80a8ddebcbc8a1f39e1b-->
 	<script type="text/javascript" src="js.js"></script>
 	
 	<hr>
