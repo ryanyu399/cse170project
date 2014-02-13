@@ -21,6 +21,18 @@
 	<!--<link href = "css/hci-friends.css" rel = "stylesheet">-->
 	<!--<link href = "css/bootstrap-twitter.css" rel = "stylesheet">-->
 <!-- >>>>>>> ca8d342164c4063e186f80a8ddebcbc8a1f39e1b -->
+<script>
+	jQuery(document).ready(function($) 
+	{
+      $(".clickableRow").click(function() 
+      {
+      	var name = $(this).attr("id");
+		window.document.location = $(this).attr("href");
+      	//var name = $(this).attr("id");
+      	//$("#reload").load("labs.html");
+      });
+	});
+</script>
 </head>
 
 <body style = "overflow-x: hidden; overflow-y: scroll;">
