@@ -2,7 +2,10 @@
 	"projects": [
 		{
 			"name": "B220",
-			"description": "50/100",
+			"description": [
+			{"person":"Anonymous at 7:20pm", "text":"Someone threw stuff in the trash!"},
+			{"person":"Peter at 6:00pm", "text":"Tutors are here!! :D"},
+			{"person":"O at 9pm", "text":"Program deadline got extended! whooooo!"} ], 
 			"id": "B220",
 			"stank":"50",
 			"crowd":"30"	
@@ -21,17 +24,13 @@
 			"id": "B240",
 			"stank":"70",
 			"crowd":"50"	
-		
-	
 		},
 		{
 			"name": "B250",
 			"description": "80/100",
 			"id": "B250",
 			"stank":"80",
-			"crowd":"60"	
-
-
+			"crowd":"60"
 		},
 		{
 			"name": "B260",
@@ -39,8 +38,6 @@
 			"id": "B260",
 			"stank":"20",
 			"crowd":"70"	
-
-
 		},
 		{
 			"name": "B270",
@@ -48,8 +45,6 @@
 			"id": "B270",
 			"stank":"30",
 			"crowd":"80"	
-
-
 		}
 	]
 }

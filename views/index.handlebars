@@ -70,9 +70,18 @@ document.write(month + "/" + day + "/" + year);
 		<tbody rowspan="2">
     		<tr class='clickableRow' href="labs/{{name}}-{{stank}}-{{crowd}}" id = "B220">
                 <td><h1>{{name}}</h1></td>
-                <td>Stank Meter : {{stank}}/100
-                	<br>
-                	Crowd Meter : {{crowd}}/100</td>
+                <td>Stank Meter : 
+                <div class="progress" style = " align:right;">
+  					<div class="progress-bar" role="progressbar" aria-valuenow="{{stank}}" aria-valuemin="0" aria-valuemax="100" style="width: {{stank}}%;">
+    					{{stank}}%
+  					</div>
+				</div>
+                	Crowd Meter :                 
+                	<div class="progress" style = " align:right;">
+  					<div class="progress-bar" role="progressbar" aria-valuenow="{{crowd}}" aria-valuemin="0" aria-valuemax="100" style="width: {{crowd}}%;">
+    					{{crowd}}%
+  					</div>
+  				</td>
        		</tr>
 		</tbody>
   	</table>
