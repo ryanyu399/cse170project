@@ -1,4 +1,4 @@
-// Get all of our friend data
+// Get all of our rooms data
 var data = require('../data.json');
 
 exports.view = function(req, res){
@@ -7,9 +7,5 @@ exports.view = function(req, res){
 };
 
 exports.view = function(req, res){
-  res.render('index', {
-    'name': 'Fake Friend',
-    'image': 'http://lorempixel.com/500/500/people',
-    'id': 'pic'
-  });
+  res.render('index', data);
 };

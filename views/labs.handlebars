@@ -6,21 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--<<<<<<< HEAD -->
-	<link href = "css/bootstrap.css" rel="stylesheet">
-	<link href = "css/bootstrap-theme.css" rel = "stylesheet">
-	<link href = "css/hci-friends.css" rel = "stylesheet">
-	<link href = "css/bootstrap-twitter.css" rel = "stylesheet">
-	<link href = "css/metro-bootstrap.css" rel = "stylesheet">
-	<link href = "css/style.css" rel = "stylesheet">
+	<link href = "../css/bootstrap.css" rel="stylesheet">
+	<link href = "../css/bootstrap-theme.css" rel = "stylesheet">
+	<link href = "../css/hci-friends.css" rel = "stylesheet">
+	<link href = "../css/bootstrap-twitter.css" rel = "stylesheet">
+	<link href = "../css/metro-bootstrap.css" rel = "stylesheet">
+	<link href = "../css/style.css" rel = "stylesheet">
 <!--=======-->
-	<script src = "js/jquery-2.1.0.min.js"></script>
-	<script src = "js/bootstrap.min.js"></script>
-	<script src = "js/jquery-ui-1.10.4.custom.min.js"></script>
-	<link href = "css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
-	<link href = "css/bootstrap.css" rel="stylesheet">
-	<link href = "css/bootstrap-theme.css" rel = "stylesheet">
-	<!--<link href = "css/hci-friends.css" rel = "stylesheet">-->
-	<!--<link href = "css/bootstrap-twitter.css" rel = "stylesheet">-->
+	<script src = "../js/jquery-2.1.0.min.js"></script>
+	<script src = "../js/bootstrap.min.js"></script>
+	<script src = "../js/jquery-ui-1.10.4.custom.min.js"></script>
+	<link href = "../css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+	<link href = "../css/bootstrap.css" rel="stylesheet">
+	<link href = "../css/bootstrap-theme.css" rel = "stylesheet">
 <!-- >>>>>>> ca8d342164c4063e186f80a8ddebcbc8a1f39e1b -->
 	
 	<!-- AJAX JQuery Method -->
@@ -31,30 +29,27 @@
 	<br>
 	<div>
 	<div class="col-xs-6 col-md-4">
-		<a href="index" rel = 'tab' style = "text-decoration:none; width:100%;" class="thumbnail tile tile-teal">
+		<a href="../index" rel = 'tab' style = "text-decoration:none; width:100%;" class="thumbnail tile tile-teal">
 			<h1>Home</h1>
 		</a>
 	</div>
 	<div class="col-xs-6 col-md-4">
-			<a href="contactus" style = "text-decoration:none; width:100%;" class="thumbnail tile tile-yellow" >
+			<a href="../contactus" style = "text-decoration:none; width:100%;" class="thumbnail tile tile-yellow" >
 				<h1>About</h1>
 			</a>
 	</div>
 	</div>
-	<div id="lab">
-	<script>
-		document.write('<h1>' + name + '</h1>');
-	</script>
-	</div>
+	<br>
+	<h1>{{room}}</h1>
 <div id = "reload">
 	<div class="table-responsive">
   	<table class="table">
 		<tbody rowspan="2">
 			<tr style = "color:green; float:left">
-				<td>Current Stank: 70</td>
+				<td>Current Stank: {{stank}}/100</td>
 			</tr>
 			<tr style = "color:red;float:left">
-				<td>Current Crowd: 69</td>
+				<td>Current Crowd: {{crowd}}/100</td>
 			</tr>
 			<tr style = "float:left">
 				<td>

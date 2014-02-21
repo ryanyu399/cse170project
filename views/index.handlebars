@@ -15,6 +15,7 @@
 	<script src = "js/jquery-2.1.0.min.js"></script>
 	<script src = "js/bootstrap.min.js"></script>
 	<script src = "js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src = "routes/index.js"></script>
 	<link href = "css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
 	<link href = "css/bootstrap.css" rel="stylesheet">
 	<link href = "css/bootstrap-theme.css" rel = "stylesheet">
@@ -63,37 +64,20 @@ document.write(month + "/" + day + "/" + year);
 </script>
 </h1>
 <div id = "reload">
-	<div class="table-responsive">
+{{#each projects}}
+	<div class="project" id = "{{id}}">
   	<table class="table">
 		<tbody rowspan="2">
-    		<tr class='clickableRow' href="labs" id = "B220">
-                <td><h1>B220</h1></td>
-                <td>Stank Meter : 50</td>
+    		<tr class='clickableRow' href="labs/{{name}}-{{stank}}-{{crowd}}" id = "B220">
+                <td><h1>{{name}}</h1></td>
+                <td>Stank Meter : {{stank}}/100
+                	<br>
+                	Crowd Meter : {{crowd}}/100</td>
        		</tr>
-       		<tr class='clickableRow' href="labs" id = "B230">
-                <td><h1>B230</h1></td>
-                <td>Stank Meter : 60</td>
-			</tr>
-       		<tr class='clickableRow' href="labs" id = "B240">
-                <td><h1>B240</h1></td>
-            	<td>Stank Meter : 70</td>
-
-			</tr>
-			<tr class='clickableRow' href="labs" id = "B250">
-                <td><h1>B250</h1></td>
-                <td>Stank Meter : 70</td>
-			</tr>
-			<tr class='clickableRow' href="labs" id = "B260">
-                <td><h1>B260</h1></td>
-                <td>Stank Meter : 70</td>
-			</tr>
-			<tr class='clickableRow' href="labs" id = "B270">
-                <td><h1>B270</h1></td>
-                <td>Stank Meter : 70</td>
-			</tr>
 		</tbody>
   	</table>
 	</div>
+{{/each}}
 </div>
 
 

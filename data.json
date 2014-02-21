@@ -1,34 +1,55 @@
 {
-	"friends": [
+	"projects": [
 		{
-			"name": "Doug Engelbart",
-			"description": "Has awesome pet mice",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"name": "B220",
+			"description": "50/100",
+			"id": "B220",
+			"stank":"50",
+			"crowd":"30"	
 		},
 		{
-			"name": "Ivan Sutherland",
-			"description": "Great at sketching",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"name": "B230",
+			"description": "60/100",
+			"id": "B230",
+			"stank":"60",
+			"crowd":"40"		
+	
 		},
 		{
-			"name": "Lucy Suchman",
-			"description": "Loves Trukese navigators",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"			
+			"name": "B240",
+			"description": "70/100",
+			"id": "B240",
+			"stank":"70",
+			"crowd":"50"	
+		
+	
 		},
 		{
-			"name": "Vannevar Bush",
-			"description": "Has stellar associative memory",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg"			
+			"name": "B250",
+			"description": "80/100",
+			"id": "B250",
+			"stank":"80",
+			"crowd":"60"	
+
+
 		},
 		{
-			"name": "Grace Hopper",
-			"description": "Only friend with a Navy ship named after them",
-			"imageURL": "http://www.personal.psu.edu/djd5202/gHop.jpg"
+			"name": "B260",
+			"description": "20/100",
+			"id": "B260",
+			"stank":"20",
+			"crowd":"70"	
+
+
 		},
 		{
-			"name": "Allen Newell",
-			"description": "Really into psychology",
-			"imageURL": "http://www.nap.edu/html/biomems/photo/anewell.JPG"
+			"name": "B270",
+			"description": "30/100",
+			"id": "B270",
+			"stank":"30",
+			"crowd":"80"	
+
+
 		}
 	]
 }

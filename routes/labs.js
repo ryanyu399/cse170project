@@ -1,11 +1,17 @@
-exports.viewLabs = function(req, res) {
+
+
+exports.viewLabs = function(req, res) 
+{
 
   // controller code goes here
-  var name = req.params.id;
-
-  console.log("Lab Room is " + name);
+  var name = req.params.name;
+  var stank = req.params.stank;
+  var crowd = req.params.crowd;
+  
   res.render('labs', {
-    'projectName': name
+    'room': name,
+    'stank' : stank,
+    'crowd' : crowd
   });
 
 };

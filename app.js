@@ -40,7 +40,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/index', index.view);
 app.get('/contactus', contactus.viewContact);
-app.get('/labs', labs.viewLabs);
+app.get('/labs/:name-:stank-:crowd', labs.viewLabs);
 
 // Example route
 // app.get('/users', user.list);
