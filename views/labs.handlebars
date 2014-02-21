@@ -19,12 +19,21 @@
 	<link href = "../css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
 	<link href = "../css/bootstrap.css" rel="stylesheet">
 	<link href = "../css/bootstrap-theme.css" rel = "stylesheet">
+	<script type="text/javascript" src="../js/data.json"></script>
 <!-- >>>>>>> ca8d342164c4063e186f80a8ddebcbc8a1f39e1b -->
 	
 	<!-- AJAX JQuery Method -->
+	<script>
+	function load() 
+	{
+	var mydata = JSON.parse(projects);
+	alert(mydata[0].name);
+	alert(mydata[0].id);
+	}
+</script>
 </head>
 
-<body style = "overflow-x: hidden; overflow-y: scroll;">
+<body style = "overflow-x: hidden; overflow-y: scroll;" onload = "load()">
 	<br>
 	<br>
 	<div>
@@ -56,10 +65,25 @@
 					<button class = "btn btn-warning reportProblem" data-toggle="modal" data-target="#myModal">Update Lab Conditions</button>
 				</td>
 			</tr>
+			<script>
+				var mydata = {{description}};
+			</script>
     		<tr >
-                <td>Anonymous at 7:20pm
-                <br>
+                <td>
+                <br><p><script>document.write(mydata[0].person);</script>
                 <p style = "color:red;">Someone threw stuff in the trash!</p>
+				</td>
+       		</tr>
+       		 <tr >
+                <td>Peter at 8:15pm
+                <br>
+                <p style = "color:red;">Tutors are here! :D</p>
+				</td>
+       		</tr>
+       		 <tr >
+                <td>Poe at 11:31pm
+                <br>
+                <p style = "color:red;">The programming assignment got extended!</p>
 				</td>
        		</tr>
 		</tbody>
@@ -123,16 +147,13 @@
 	</div>
 
 
-	<script type="ajax.js" src="js.js"></script>
+	<script type="ajax.js" src="../js.js"></script>
 <!--<<<<<<< HEAD-->
-	<script src = "js/jquery-1.11.0.js"></script>
-	<script src = "js/ajax.js"></script>
+	<script src = "../js/jquery-1.11.0.js"></script>
+	<script src = "../js/ajax.js"></script>
 
 <!-- =======-->
 <!-- >>>>>>> ca8d342164c4063e186f80a8ddebcbc8a1f39e1b-->
-	<script type="text/javascript" src="js.js"></script>
-	<script type="text/javascript" src="">
-	</script>
 	<hr>
 	<p class="text-center">
     &copy; 2013, //TODO -- CSE 170
