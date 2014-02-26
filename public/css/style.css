@@ -24,4 +24,19 @@ h1.sansserif
 	font-family:Arial,Helvetica,sans-serif;
 }
 
+.modal { 
+    overflow-y: auto;
+    top: 20px !important; 
+    right: 3%; 
+    left: 3%;
+    width: auto; 
+    margin: 0; 
+}
+
+.checkbox
+{
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+}
 
