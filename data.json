@@ -3,46 +3,56 @@
 		{
 			"name": "B220",
 			"description": [
-			{"person":"Anonymous at 7:20pm", "text":"Someone threw stuff in the trash!"},
-			{"person":"Peter at 6:00pm", "text":"Tutors are here!! :D"},
-			{"person":"O at 9pm", "text":"Program deadline got extended! whooooo!"} ], 
+				{"person":"Anonymoud at 6:02pm on 6/10/2013", "detail": "assignment got extended! :)"},
+				{"person":"Peter at 8pm on 6/10/2013", "detail":"tutors are here!"}
+			],
 			"id": "B220",
 			"stank":"50",
 			"crowd":"30"	
 		},
 		{
 			"name": "B230",
-			"description": "60/100",
-			"id": "B230",
+			"description": [
+				{"person":"Jess at 4:20pm on 6/10/2013", "detail": "Everyone is here!"},
+				{"person":"Max at 8:20pm on 6/12/2013", "detail":"Tutors are late :("}
+			],			"id": "B230",
 			"stank":"60",
 			"crowd":"40"		
 	
 		},
 		{
 			"name": "B240",
-			"description": "70/100",
-			"id": "B240",
+			"description": [
+				{"person":"Lam at 3:05pm on 6/1/2013", "detail": "B240 is super full..."},
+				{"person":"Pam at 8:56pm on 6/30/2013", "detail":"People finished, lab is free now!"}
+			],			"id": "B240",
 			"stank":"70",
 			"crowd":"50"	
 		},
 		{
 			"name": "B250",
-			"description": "80/100",
-			"id": "B250",
+			"description": [
+				{"person":"Max at 10pm on 6/15/2013", "detail": "Everyone is screwed for this assignment..."},
+				{"person":"Ryan at 11pm on 6/22/2013", "detail":"Hep is here!"}
+			],			"id": "B250",
 			"stank":"80",
 			"crowd":"60"
 		},
 		{
 			"name": "B260",
-			"description": "20/100",
-			"id": "B260",
+			"description": [
+				{"person":"Peter at 10pm on 6/10/2013", "detail": "Someone threw up here"},
+				{"person":"Lo at 11pm on 6/10/2013", "detail":"Janitor just cleaned it"}
+			],			"id": "B260",
 			"stank":"20",
 			"crowd":"70"	
 		},
 		{
 			"name": "B270",
-			"description": "30/100",
-			"id": "B270",
+			"description": [
+				{"person":"Pat at 6:30pm on 6/10/2013", "detail": "Free food here!"},
+				{"person":"Eric at 8pm on 6/10/2013", "detail":"There's a lot of people here..."}
+			],			"id": "B270",
 			"stank":"30",
 			"crowd":"80"	
 		}

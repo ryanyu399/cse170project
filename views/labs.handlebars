@@ -10,12 +10,21 @@
 	<link href = "../css/style.css" rel = "stylesheet">
 	<script type="text/javascript" src="../js/data.json"></script>
 	<script>
-	function load() 
-	{
-	var mydata = JSON.parse(projects);
-	alert(mydata[0].name);
-	alert(mydata[0].id);
-	}
+function saveData()
+{
+var data = JSON.parse("data.json");  //parse the JSON
+data.projects.push(		{
+			"name": "B220",
+			"description": [
+				{"person":"Anonymoud at 6:02pm", "detail": "assignment got extended! :)"},
+				{"person":"Peter at 8pm", "detail":"tutors are here!"}
+			],
+			"id": "B220",
+			"stank":"50",
+			"crowd":"30"	
+		});
+txt = JSON.stringify(data);  //reserialize to JSON
+}
 </script>
 </head>
 
@@ -48,24 +57,14 @@
 					Update Lab Conditions</button>
 				</td>
 			</tr>
+			{{#each description}}
     		<tr >
                 <td>
-                <p>Person1 at 7:52pm</p>
-                <p style = "color:red;">Someone threw stuff in the trash!</p>
+                <p>{{person}}</p>
+                <p style = "color:red;">{{detail}}</p>
 				</td>
-       		</tr>
-       		 <tr >
-                <td>Peter at 8:15pm
-                <br>
-                <p style = "color:red;">Tutors are here! :D</p>
-				</td>
-       		</tr>
-       		 <tr >
-                <td>Poe at 11:31pm
-                <br>
-                <p style = "color:red;">The programming assignment got extended!</p>
-				</td>
-       		</tr>
+			</tr>
+			{{/each}}
   	</table>
 	</div>
 
@@ -86,7 +85,7 @@
 			        <form class="form-horizontal" role="form">
 					  	<div class="form-group">
 					    	<label class="sr-only" for="exampleInputEmail2">Email address</label>
-					    	<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Name">
+					    	<input type="email" class="form-control" id="name" placeholder="Name">
 					  	</div>
 						<p>
 							<label for="stank">Stank</label>
@@ -117,7 +116,7 @@
 		      	</div>
 		      	<div class="modal-footer">
 		        	<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-		        	<button type="button" class="btn btn-primary submitProblem" data-dismiss="modal" >Submit</button>
+		        	<button type="button" class="btn btn-primary submitProblem" data-dismiss="modal" id = "saveData" onclick = "saveData">Submit</button>
 		      	</div>
 		  </div>
 	</div>
