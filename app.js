@@ -12,6 +12,7 @@ var index = require('./routes/index');
 //var updateconditions = require('./routes/updateconditions');
 var contactus = require('./routes/contactus');
 var labs = require('./routes/labs');
+var updateconditions = require('./routes/updateconditions');
 // Example route
 // var user = require('./routes/user');
 
@@ -40,7 +41,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index.view);
 app.get('/index', index.view);
-//app.get('/updateconditions', updateconditions.view);
+app.get('/updateconditions', updateconditions.updateconditions);
 app.get('/labspage/:name-:stank-:crowd', labs.viewPage);
 app.get('/contactus', contactus.viewContact);
 app.get('/labs/:name-:stank-:crowd', labs.viewLabs);
