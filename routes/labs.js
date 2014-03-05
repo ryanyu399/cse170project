@@ -8,18 +8,21 @@ exports.viewLabs = function(req, res)
   var stank = req.params.stank;
   var crowd = req.params.crowd;
   var desc = data.projects[0].description;
-  var modal = true;
+  var randomBoolean = Math.random() >= 0.5;
+
+  var modal = randomBoolean;
   
   res.render('labs', {
     'modal': modal,
     'room': name1,
     'stank' : stank,
     'crowd' : crowd,
-    'description': desc
+    'description': desc,
+    'modal':modal
   });
 
 };
-
+  /*
 exports.viewPage = function(req, res) 
 {
   // controller code goes here
@@ -34,7 +37,10 @@ exports.viewPage = function(req, res)
     'room': name1,
     'stank' : stank,
     'crowd' : crowd,
-    'description': desc
+    'description': desc,
+    'modal':modal
   });
+  
 
 };
+*/

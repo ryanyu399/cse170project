@@ -2,10 +2,19 @@
 var data = require('../data.json');
 
 exports.view = function(req, res){
-	console.log(data);
-	res.render('index');
+    var randomBoolean = Math.random() >= 0.5;
+
+    var modal = randomBoolean;
+    
+	res.render('index', {
+    'modal':modal
+  });
 };
 
 exports.view = function(req, res){
-  res.render('index', data);
+    var randomBoolean = Math.random() >= 0.5;
+
+    var modal = randomBoolean;
+    
+	res.render('index', data);
 };
