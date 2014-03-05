@@ -22,11 +22,6 @@
       });
 	});
 </script>
-<script>
-	  var randomBoolean = Math.random() >= 0.5;
-	  if(randomBoolean == true)
-	  	document.getElementById("menu").innerHTML = "	<div> <div class='col-xs-6 col-md-4'><a href='index' rel = 'tab' style = 'text-decoration:none; width:100%; height:50%;' class='thumbnail tile tile-teal'><h1>Home</h1></a></div><div class='col-xs-6 col-md-4'><a href='contactus' style = 'text-decoration:none; width:100%; height:50%' class='thumbnail tile tile-yellow' ><h1>About</h1></a></div></div>";
-</script>
 </head>
 
 <body style = "overflow-x: hidden; overflow-y: scroll;">
@@ -37,7 +32,7 @@
 	{
 		document.write("<div> <div class='col-xs-6 col-md-4'><a href='index' "+
 		"rel = 'tab' style = 'text-decoration:none; width:100%; height:50%;' " +
-		"class='thumbnail tile tile-teal'><h1>Home</h1></a></div><div "+
+		"class='thumbnail tile tile-teal' ><h1>Home</h1></a></div><div "+
 		"class='col-xs-6 col-md-4'><a href='contactus' style = 'text-decoration:none; "+
 		"width:100%; height:50%' class='thumbnail tile tile-yellow' ><h1>About</h1></a>"+
 		"</div></div>");
@@ -56,7 +51,9 @@ document.write(month + "/" + day + "/" + year);
 {{#each projects}}
 	<div class="project" id = "{{id}}">
   	<table class="table">
-    		<tr class='clickableRow' href="labs/{{name}}-{{stank}}-{{crowd}}" id = "B220">
+    		<tr class='clickableRow' href="labs/{{name}}-{{stank}}-{{crowd}}" id = "{{id}}"
+    		onclick = "_gaq.push(['_trackEvent', 
+					'roomPressed', 'lab', 'labRoom']);">
                 <td style = "width:95%"><h1>{{name}}</h1>
                 <div style = "float:left; width:45%;">
                 	<h5 style = "text-align:left; margin-left:10%;">Stank Meter :</h5>
