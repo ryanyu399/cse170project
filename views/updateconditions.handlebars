@@ -17,7 +17,7 @@ var data = JSON.parse("data.json");  //parse the JSON
 data.projects.push(		{
 			"name": "B220",
 			"description": [
-				{"person":"Anonymoud at 6:02pm", "detail": "assignment got extended! :)"},
+				{"person":"Anonymous at 6:02pm", "detail": "assignment got extended! :)"},
 				{"person":"Peter at 8pm", "detail":"tutors are here!"}
 			],
 			"id": "B220",
@@ -33,13 +33,13 @@ txt = JSON.stringify(data);  //reserialize to JSON
 	<h1 style = "text-align:center; margin-top:0%;">{{room}}</h1>
 	<div>	
 	<div class="col-xs-6 col-md-4">
-		<a href="../index" rel = 'tab' style = "text-decoration:none; width:100%; height:50%;" class="thumbnail tile tile-teal">
+		<a href="../index" rel = 'tab' style = "text-decoration:none; width:100%; height:50%;" class="thumbnail tile tile-silver">
 
 			<h1>Home</h1>
 		</a>
 	</div>
 	<div class="col-xs-6 col-md-4">
-			<a href="../contactus" style = "text-decoration:none; width:100%; height:50%" class="thumbnail tile tile-yellow" >
+			<a href="../contactus" style = "text-decoration:none; width:100%; height:50%" class="thumbnail tile tile-silver" >
 				<h1>About</h1>
 			</a>
 	</div>
@@ -51,29 +51,29 @@ txt = JSON.stringify(data);  //reserialize to JSON
 	    	<input type="email" class="form-control" id="name" placeholder="Name">
 	  	</div>
 		<p>
-			<label for="stank">Stank</label>
-			<input type="text" id="stank" style="border:2; color:green; font-weight:bold; width:30%;">/100
+			<label for="stank">Stench:</label>
+			<input type="text" id="stank" style="border:2; color:green; font-weight:bold; width:30%;"> %
 		</p>						 
 		<div id="slider-range-min"></div>
 		<p>
-			<label for="crowd">Crowdedness</label>
-			<input type="text" id="crowd" style="border:2; color:red; font-weight:bold; width:30%;">/100
+			<label for="crowd">Fullness:</label>
+			<input type="text" id="crowd" style="border:2; color:red; font-weight:bold; width:30%;"> %
 		</p>						 
 		<div id="slider-range-min2"></div>
 	  	<div class="checkbox">
 		    <label>
-		      <input type="checkbox"> Strong food Smell
+		      <input type="checkbox"> Smells like food/rotting odor
 		    </label>
 	  	</div>
 	  	<br>
 	  	<div class="checkbox">
 		    <label>
-		      <input type="checkbox"> Smells like Sweat/B.O.
+		      <input type="checkbox"> Smells like sweat/body odor
 		    </label>
 	  	</div>
 	  	<div class="checkbox">
 		    <label>
-		      <input type="checkbox"> <input placeholder="other"type="text" class="form-control">
+		      <input type="checkbox"> <input placeholder="Some other issue?" type="text" class="form-control">
 		    </label>
 	  	</div>
 	</form>

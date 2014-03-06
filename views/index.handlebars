@@ -2,16 +2,20 @@
 
 <html>
 <head>
-	<title> CSE Labs Weather App</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Lab Weather</title>
+
+	<meta charset = "utf-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 	<link href = "css/metro-bootstrap.css" rel = "stylesheet">
 	<link href = "css/style.css" rel = "stylesheet">
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+	<link rel = "stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+
 	<script src = "js/jquery-2.1.0.min.js"></script>
 	<script src = "js/bootstrap.min.js"></script>
 	<script src = "routes/index.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+	<script src = "http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='82939632-1',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
@@ -42,51 +46,56 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
   <div data-role="header" class="jqm-header ui-header ui-bar-f ui-header-fixed 
   	slidedown" data-theme="a" data-position="fixed" role="banner ">
-   	<h1 class="ui-title" role="heading" aria-level="1"><strong>CSE Labs App</strong></h1>
+   	<h1 class="ui-title" role="heading" aria-level="1"><strong>Lab Weather</strong></h1>
     <a href="#" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a>
     <a href="contactus" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext">Info Icon</a>
   </div>
 	
-<h1 style = "margin-left:10%; color:blue;"> Today is
-<script type="text/javascript">
+<h3 style = "margin-left:10%; color:black;"> Which room would you like to check?
+<!--<script type="text/javascript">
 var currentTime = new Date();
 var month = currentTime.getMonth() + 1;
 var day = currentTime.getDate();
 var year = currentTime.getFullYear();
 document.write(month + "/" + day + "/" + year);
-</script>
-</h1>
+</script>-->
+</h3>
 <div id = "reload">
 {{#each projects}}
 	<div class="project" id = "{{id}}">
   	<table class="table">
-    		<tr class='clickableRow' href="labs/{{name}}-{{stank}}-{{crowd}}" id = "{{id}}"
-    		onclick = "_gaq.push(['_trackEvent', 
-					'roomPressed', 'lab', 'labRoom']);">
-                <td style = "width:95%"><h1>{{name}}</h1>
+  		<tr class='clickableRow' href="labs/{{name}}-{{stank}}-{{crowd}}" id = "{{id}}"
+  		onclick = "_gaq.push(['_trackEvent', 
+				'roomPressed', 'lab', 'labRoom']);">
+
+              <td style = "width:95%"><h1>{{name}}</h1>
+
                 <div style = "float:left; width:45%;">
-                	<h5 style = "text-align:left; margin-left:10%;">Stank Meter :</h5>
+                	<h5 style = "text-align:left; margin-left:10%;">Stench:</h5>
                 	<div class="progress" style = " align:right; width:100%;">
-  						<div class="progress-bar" role="progressbar" aria-valuenow="{{stank}}" 
-  						aria-valuemin="0" aria-valuemax="100" style="width: {{stank}}%;">
-    						{{stank}}%
-  						</div>
-					</div>
-				</div>
-				<div style = "float:left; width:45%; margin-left:5%;">
-                	<h5 style = "margin-left:5%;">Crowd Meter :</h5>              
-                	<div class="progress" style = " align:left; width:100%;">
-  						<div class="progress-bar" role="progressbar" aria-valuenow="{{crowd}}" 
-  						aria-valuemin="0" aria-valuemax="100" style="width: {{crowd}}%;">
-    						{{crowd}}%
-  						</div>
-  					</div>
-  				</div>
-  				</td>
-  				<td style = "width:5%">
-  				<h1 style = "margin-top:200%;">></h1>
-  				</td>
-       		</tr>
+  						      <div class="progress-bar" role="progressbar" aria-valuenow="{{stank}}" 
+  						        aria-valuemin="0" aria-valuemax="100" style="width: {{stank}}%;">
+    						      {{stank}}%
+  						      </div>
+  				         </div>
+  			        </div>
+
+        				<div style = "float:left; width:45%; margin-left:5%;">
+                	<h5 style = "margin-left:5%;">Fullness:</h5>              
+                  	<div class="progress" style = " align:left; width:100%;">
+          						<div class="progress-bar" role="progressbar" aria-valuenow="{{crowd}}" 
+          						  aria-valuemin="0" aria-valuemax="100" style="width: {{crowd}}%;">
+            						{{crowd}}%
+          						</div>
+          					</div>
+        				</div>
+
+				      </td>
+              
+      				<td style = "width:5%">
+      				  <h1 style = "margin-top:200%;">></h1>
+      				</td>
+   		</tr>
   	</table>
 	</div>
 {{/each}}
