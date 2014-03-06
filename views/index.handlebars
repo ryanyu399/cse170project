@@ -25,19 +25,20 @@
 </head>
 
 <body style = "overflow-x: hidden; overflow-y: scroll;">
-<div id = "menu">
-</div>
-<script>
-	if(Math.random() >= 0.5)
-	{
-		document.write("<div> <div class='col-xs-6 col-md-4'><a href='index' "+
-		"rel = 'tab' style = 'text-decoration:none; width:100%; height:50%;' " +
-		"class='thumbnail tile tile-teal' ><h1>Home</h1></a></div><div "+
-		"class='col-xs-6 col-md-4'><a href='contactus' style = 'text-decoration:none; "+
-		"width:100%; height:50%' class='thumbnail tile tile-yellow' ><h1>About</h1></a>"+
-		"</div></div>");
-	}
-</script>
+	<div>	
+	<div class="col-xs-6 col-md-4">
+		<a href="/index" rel = 'tab' style = "text-decoration:none; width:100%; height:50%;" class="thumbnail tile tile-teal">
+
+			<h1>Home</h1>
+		</a>
+	</div>
+	<div class="col-xs-6 col-md-4">
+			<a href="/contactus" style = "text-decoration:none; width:100%; height:50%" class="thumbnail tile tile-yellow" >
+				<h1>About</h1>
+			</a>
+	</div>
+	</div>
+	
 <h1 style = "margin-left:10%; color:blue;"> Today is
 <script type="text/javascript">
 var currentTime = new Date();
