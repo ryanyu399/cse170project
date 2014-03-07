@@ -30,20 +30,14 @@ txt = JSON.stringify(data);  //reserialize to JSON
 </head>
 
 <body>
+  <div data-role="header" class="jqm-header ui-header ui-bar-f ui-header-fixed 
+  	slidedown" data-theme="a" data-position="fixed" role="banner ">
+   	<h1 class="ui-title" role="heading" aria-level="1"><strong>Lab Weather</strong></h1>
+    <a href="#" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a>
+    <a href="contactus" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext">Info Icon</a>
+  </div>
 	<h1 style = "text-align:center; margin-top:0%;">{{room}}</h1>
-	<div>	
-	<div class="col-xs-6 col-md-4">
-		<a href="../index" rel = 'tab' style = "text-decoration:none; width:100%; height:50%;" class="thumbnail tile tile-silver">
 
-			<h1>Home</h1>
-		</a>
-	</div>
-	<div class="col-xs-6 col-md-4">
-			<a href="../contactus" style = "text-decoration:none; width:100%; height:50%" class="thumbnail tile tile-silver" >
-				<h1>About</h1>
-			</a>
-	</div>
-	</div>
 	
 	<form class="form-horizontal" role="form" style = "margin-left:5%; margin-right:5%;">
 	  	<div class="form-group">
