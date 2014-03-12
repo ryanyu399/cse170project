@@ -13,7 +13,6 @@
 
 	<script src = "js/jquery-2.1.0.min.js"></script>
 	<script src = "js/bootstrap.min.js"></script>
-	<script src = "routes/index.js"></script>
 	<script src = "http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
 <script>
 	jQuery(document).ready(function($) 
@@ -34,26 +33,17 @@
   <div data-role="header" class="jqm-header ui-header ui-bar-f ui-header-fixed 
   	slidedown" data-theme="a" data-position="fixed" role="banner ">
    	<h1 class="ui-title" role="heading" aria-level="1"><strong>Lab Weather</strong></h1>
-    <a href="#" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a>
+    <a href="index" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a>
     <a href="contactus" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext">Info Icon</a>
   </div>
 	
 <h4 style = "margin-left:10%; color:black;"> Which room would you like to check?
-<!--<script type="text/javascript">
-var currentTime = new Date();
-var month = currentTime.getMonth() + 1;
-var day = currentTime.getDate();
-var year = currentTime.getFullYear();
-document.write(month + "/" + day + "/" + year);
-</script>-->
 </h4>
 <div id = "reload">
 {{#each projects}}
 	<div class="project" id = "{{id}}">
   	<table class="table">
-  		<tr class='clickableRow' href="labs/{{name}}-{{stank}}-{{crowd}}" id = "{{id}}"
-  		onclick = "_gaq.push(['_trackEvent', 
-				'roomPressed', 'lab', 'labRoom']);">
+  		<tr class='clickableRow' href="labs/{{name}}-{{stank}}-{{crowd}}" id = "{{id}}">
 
               <td style = "width:95%"><h1>{{name}}</h1>
 
@@ -91,16 +81,5 @@ document.write(month + "/" + day + "/" + year);
 	<p class="text-center">
     &copy; 2014, //TODO -- CSE 170
 	</p>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-48437362-2', 'none');
-  //ga('create', 'UA-48437362-2', 'todocse170.herokuapp.com');
-  ga('send', 'pageview');
-
-</script>
 </body>
 </html>

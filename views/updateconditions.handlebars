@@ -14,7 +14,6 @@
 	<script src = "../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/data.json"></script>
 	<script src = "http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
-	
 	<script>
 $(function(){
     $("input[type='checkbox']").change(function(){
@@ -99,15 +98,5 @@ $(function(){
 	<button type="button" class="btn btn-default" data-dismiss="modal" onclick = "history.go(-1);">Cancel</button>
 	<button type="button" class="btn btn-primary submitProblem" data-dismiss="modal" id = "saveData" onclick = "history.go(-1);">Submit</button>
 	</div>
-	<script>
-	$(document).ready(function() 
-	{
-		$(.submitProblem).on('click', function(e)
-		{
-			ga("send", "event", "submit", "click");
-		});
-		})
-	});
-	</script>
 </body>
 </html>
