@@ -7,43 +7,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href = "../css/bootstrap.css" rel = "stylesheet">
 	<link href = "../css/metro-bootstrap.css" rel = "stylesheet">
+	<link rel = "stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css">
+
 	<link href = "../css/style.css" rel = "stylesheet">
+	<script src = "../js/jquery-2.1.0.min.js"></script>
+	<script src = "../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/data.json"></script>
+	<script src = "http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
 	
 	<script>
-function saveData()
-{
-var data = JSON.parse("data.json");  //parse the JSON
-data.projects.push(		{
-			"name": "B220",
-			"description": [
-				{"person":"Anonymous at 6:02pm", "detail": "assignment got extended! :)"},
-				{"person":"Peter at 8pm", "detail":"tutors are here!"}
-			],
-			"id": "B220",
-			"stank":"50",
-			"crowd":"30"	
-		});
-txt = JSON.stringify(data);  //reserialize to JSON
-}
+$(function(){
+    $("input[type='checkbox']").change(function(){
+
+        if($(this).is(":checked"))
+        {
+            $("#"+$(this).attr("id")+"_box").show();
+        }
+        else{
+          $("#"+$(this).attr("id")+"_box").find("input[type='text']").val("")  ;
+          $("#"+$(this).attr("id")+"_box").hide(); 
+        }
+    });
+});
 </script>
 </head>
 
 <body>
+  <div data-role="header" class="jqm-header ui-header ui-bar-f ui-header-fixed 
+  	slidedown" data-theme="a" data-position="fixed" role="banner ">
+   	<h1 class="ui-title" role="heading" aria-level="1"><strong>Update Weather</strong></h1>
+    <a href="../index" class="ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">Home Icon</a>
+    <a href="contactus" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext">Info Icon</a>
+  </div>
 	<h1 style = "text-align:center; margin-top:0%;">{{room}}</h1>
-	<div>	
-	<div class="col-xs-6 col-md-4">
-		<a href="../index" rel = 'tab' style = "text-decoration:none; width:100%; height:50%;" class="thumbnail tile tile-silver">
 
-			<h1>Home</h1>
-		</a>
-	</div>
-	<div class="col-xs-6 col-md-4">
-			<a href="../contactus" style = "text-decoration:none; width:100%; height:50%" class="thumbnail tile tile-silver" >
-				<h1>About</h1>
-			</a>
-	</div>
-	</div>
 	
 	<form class="form-horizontal" role="form" style = "margin-left:5%; margin-right:5%;">
 	  	<div class="form-group">
@@ -52,30 +49,51 @@ txt = JSON.stringify(data);  //reserialize to JSON
 	  	</div>
 		<p>
 			<label for="stank">Stench:</label>
-			<input type="text" id="stank" style="border:2; color:green; font-weight:bold; width:30%;"> %
+			<div>
+				<h4 style = "float:right;margin-right:45%;">%</h4>
+
+				<div style = "width:50%;">
+					<input type="text" id="stank" style="border:2; color:green; 
+						font-weight:bold; width:30%; display:block;">
+				</div>
+			</div>
+
 		</p>						 
 		<div id="slider-range-min"></div>
 		<p>
-			<label for="crowd">Fullness:</label>
-			<input type="text" id="crowd" style="border:2; color:red; font-weight:bold; width:30%;"> %
+			<label for="stank">Fullness:</label>
+			<div>
+				<h4 style = "float:right;margin-right:45%;">%</h4>
+
+				<div style = "width:50%;">
+					<input type="text" id="stank" style="border:2; color:green; 
+						font-weight:bold; width:30%; display:block;">
+				</div>
+			</div>
+
 		</p>						 
 		<div id="slider-range-min2"></div>
-	  	<div class="checkbox">
 		    <label>
 		      <input type="checkbox"> Smells like food/rotting odor
 		    </label>
-	  	</div>
 	  	<br>
-	  	<div class="checkbox">
 		    <label>
 		      <input type="checkbox"> Smells like sweat/body odor
 		    </label>
-	  	</div>
-	  	<div class="checkbox">
+		<br>
 		    <label>
-		      <input type="checkbox"> <input placeholder="Some other issue?" type="text" class="form-control">
+		    <label>
+				<div class="munna">                    
+					<input id="chk"  type="checkbox"
+						onClick="document.getElementById('reason').focus();">Other Reason
+				</div>
+			</label>
+			<label>
+				<div id="chk_box" style="display:none;">
+					<input type="text" size="5" value=""  name="reason" 
+						id="reason" />
+				</div>
 		    </label>
-	  	</div>
 	</form>
 	</div>
 	<div class="modal-footer">
@@ -92,18 +110,5 @@ txt = JSON.stringify(data);  //reserialize to JSON
 		})
 	});
 	</script>
-	<script src = "../js/jquery-2.1.0.min.js"></script>
-	<script src = "../js/bootstrap.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  //ga('create', 'UA-48437362-2', 'none');
-  ga('create', 'UA-48437362-2', 'todocse170.herokuapp.com');
-  ga('send', 'pageview');
-
-</script>
 </body>
 </html>
